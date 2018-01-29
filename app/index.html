@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>ЖК Андреевка</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="font/stylesheet.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div class="modal" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalTittle">Подбор параметров будущего жилья</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body row">
+            <div class="left_col col-md-4">
+              <div class="list_alig flat_list__stage">
+                <div class="list title">Этаж</div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage1"/>
+                  <label for="stage1">1</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage2"/>
+                  <label for="stage2">2</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage3"/>
+                  <label for="stage3">3</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage4"/>
+                  <label for="stage4">4</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage5"/>
+                  <label for="stage5">5</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage1"/>
+                  <label for="stage1">1</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage2"/>
+                  <label for="stage2">2</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage3"/>
+                  <label for="stage3">3</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage4"/>
+                  <label for="stage4">4</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage5"/>
+                  <label for="stage5">5</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage1"/>
+                  <label for="stage1">1</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage2"/>
+                  <label for="stage2">2</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage3"/>
+                  <label for="stage3">3</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage4"/>
+                  <label for="stage4">4</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage5"/>
+                  <label for="stage5">5</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage1"/>
+                  <label for="stage1">1</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage2"/>
+                  <label for="stage2">2</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage3"/>
+                  <label for="stage3">3</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage4"/>
+                  <label for="stage4">4</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="stage5"/>
+                  <label for="stage5">5</label>
+                </div>
+              </div>
+              <div class="list_alig flat_type">
+                <div class="list title">Тип</div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="every"/>
+                  <label for="every">Любая</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="1room"/>
+                  <label for="1room">1-комнатная</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="2room"/>
+                  <label for="2room">2-комнатная</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="3room"/>
+                  <label for="3room">3-комнатная</label>
+                </div>
+                <div class="stage__item">
+                  <input class="stage_input" type="checkbox" id="none"/>
+                  <label for="none">Нежилые помещения</label>
+                </div>
+              </div>
+              <div class="list_alig flat_square">
+                <div class="list title">Площадь м&sup2;</div>
+                <div class="input_item">
+                  <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text" id="start">От</span></div>
+                    <input class="form-control stage_input" type="text" placeholder="0" aria-label="От" aria-describedby="start"/>
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text" id="end">До</span></div>
+                    <input class="form-control stage_input" type="text" placeholder="0" aria-label="До" aria-describedby="end"/>
+                  </div>
+                </div>
+              </div>
+              <div class="list_alig flat_price">
+                <div class="list title">Cтоимость, руб.</div>
+                <div class="input_item">
+                  <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text" id="start">От</span></div>
+                    <input class="form-control stage_input" type="text" placeholder="0" aria-label="От" aria-describedby="start"/>
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text" id="end">До</span></div>
+                    <input class="form-control stage_input" type="text" placeholder="0" aria-label="До" aria-describedby="end"/>
+                  </div>
+                </div>
+              </div>
+              <div class="list_alig flat_button">
+                <div class="btn btn-success button_form">Подобрать квартиру</div>
+              </div>
+            </div>
+            <div class="right_col col-md-8">
+              <div class="item">
+                <div class="item_img"></div>
+                <div class="item_info">
+                  <div class="item_desc">Квартиры: 40</div>
+                  <div class="item_desc">Этажи 1-16</div>
+                  <div class="item_desc">Площадь: от 32.70 м&sup2;</div>
+                </div>
+                <div class="item_price"> 
+                  <div class="item_price__text">от 2 537 287 р.</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_img"></div>
+                <div class="item_info">
+                  <div class="item_desc">Квартиры: 40</div>
+                  <div class="item_desc">Этажи 1-16</div>
+                  <div class="item_desc">Площадь: от 32.70 м&sup2;</div>
+                </div>
+                <div class="item_price"> 
+                  <div class="item_price__text">от 2 537 287 р.</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_img"></div>
+                <div class="item_info">
+                  <div class="item_desc">Квартиры: 40</div>
+                  <div class="item_desc">Этажи 1-16</div>
+                  <div class="item_desc">Площадь: от 32.70 м&sup2;</div>
+                </div>
+                <div class="item_price"> 
+                  <div class="item_price__text">от 2 537 287 р.</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_img"></div>
+                <div class="item_info">
+                  <div class="item_desc">Квартиры: 40</div>
+                  <div class="item_desc">Этажи 1-16</div>
+                  <div class="item_desc">Площадь: от 32.70 м&sup2;</div>
+                </div>
+                <div class="item_price"> 
+                  <div class="item_price__text">от 2 537 287 р.</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_img"></div>
+                <div class="item_info">
+                  <div class="item_desc">Квартиры: 40</div>
+                  <div class="item_desc">Этажи 1-16</div>
+                  <div class="item_desc">Площадь: от 32.70 м&sup2;</div>
+                </div>
+                <div class="item_price"> 
+                  <div class="item_price__text">от 2 537 287 р.</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item_img"></div>
+                <div class="item_info">
+                  <div class="item_desc">Квартиры: 40</div>
+                  <div class="item_desc">Этажи 1-16</div>
+                  <div class="item_desc">Площадь: от 32.70 м&sup2;</div>
+                </div>
+                <div class="item_price"> 
+                  <div class="item_price__text">от 2 537 287 р.   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper"></div>
+    <section class="hero">
+      <div class="container">
+        <div class="wrap_main clearfix">
+          <div class="logo_left"><img class="logo_pic" src="../../img/logo.png"/></div>
+          <div class="contacts_right">
+            <div class="contacts_time">10:00 - 19:00 </div>
+            <div class="contacts_phone">+7 (495)109-06-02</div><a class="btn btn-success callback" href="#" role="button">Обратный звонок</a><a class="btn btn-success phone_btn" href="#" role="button"><i class="fa fa-phone" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="wrap_main wrap_tittle">
+          <div class="hero_tittle__block">
+            <div class="hero_tittle__caption">Солнечногорский район, п. Андреевка, вблизи ул. Ясная</div>
+            <div class="hero_tittle__tittle">ЖК "Андреевка"</div>
+            <div class="hero_tittle__descript">Экологически чистый район в живописном месте</div>
+          </div>
+        </div>
+        <div class="wrap_main wrap_options">
+          <div class="option_block">
+            <div class="option_pic"> <img class="option_pic__img" src="../../img/Shape 799-2.svg" alt=""/></div>
+            <div class="option_tittle">Низкие цены</div>
+            <div class="option_descript">Квартиры от 1,5 млн. рублей</div>
+            <div class="option_info">В том числе экономичные студии до 24 м2</div>
+          </div>
+          <div class="option_block">
+            <div class="option_pic"><img class="option_pic__img" src="../../img/Shape 799-1.svg" alt=""/></div>
+            <div class="option_tittle">Развитая инфраструктура</div>
+            <div class="option_descript">Подземный паркинг на 600 мест детский сад на 60 мест</div>
+            <div class="option_info">Собственная торговая инфраструктура</div>
+          </div>
+          <div class="option_block">
+            <div class="option_pic"><img class="option_pic__img" src="../../img/Shape 799.svg" alt=""/></div>
+            <div class="option_tittle">Благоприятная роза ветров</div>
+            <div class="option_descript third">Вдали от шума, c видом на лесопарк, </div>
+            <div class="option_info">где можно гулять с детьми,тихие соседи</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flat">
+      <div class="flat_tittle">
+        <div class="flat_tittle__tittle">Подберите квартиру для себя</div>
+        <div class="flat_tittle__descript">Доступное жилье по привлекательной цене</div>
+      </div>
+      <div class="modal_wrap"><a class="modal_overlay" data-toggle="modal" href="#ModalCenter" data-target="#ModalCenter"><img class="modal__img" src="../../img/modal_shape.png" alt=""/></a>
+        <div class="modal_pic"> <img src="../../img/modal_bg.jpg" alt=""/>
+          <section class="call">
+            <div class="call_tittle_main">
+              <div class="call_tittle">Успей забронировать понравившуюся квартиру</div>
+              <div class="call_phone">+7 (495) 109-06-02</div>
+              <div class="call_time">10:00 - 19:00</div>
+            </div>
+            <form class="form">
+              <div class="row">
+                <div class="col">
+                  <input class="form-control call_in" type="text" placeholder="Ваше Имя"/>
+                </div>
+                <div class="col">
+                  <input class="form-control call_in" type="text" placeholder="Ваш телефон"/>
+                </div>
+                <div class="col">
+                  <button class="btn btn-success submit_but" type="submit">Записаться на просмотр</button>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+// sass typography autoimport
+@import typo
+
+// general section settings
+.container
+   margin: 0 auto
+   width: 960px
+.wrap_main
+    position: relative
+    z-index: 10
+.hero
+    padding-top: 30px
+    color: white
+    height: 100%
+    z-index: 30
+    background-image: url('../../img/hero-bg.jpg')
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    background-attachment: fixed
+
+// content settings
+.logo_left
+    float: left
+    width: auto
+.contacts_right
+    float: right
+    font-family: 'pf_square_sans_proregular'
+.contacts_time
+    font-size: 18px
+    text-align: right
+    line-height: 18px
+    width: 100%
+    position: relative
+.contacts_phone
+    font-family: 'PFSquareSansPro-Bold'
+    font-size: 24px
+    line-height: 24px
+    width: 100%
+    margin-top: 10px
+    margin-bottom: 10px
+.btn.btn-success.callback
+    border-radius: 30px
+    padding: 5px 20px
+    display: block
+    font-size: 21px
+    font-family: 'PFSquareSansPro-Bold'
+    background-color: $green
+    border-color: $green
+    &:hover
+        background-color: $yellow
+        transition: .5s ease
+        border: 1px $yellow solid
+.btn.btn-success.phone_btn
+    border-radius: 60px
+    width: 60px
+    height: 60px
+    display: inline-block
+    margin-top: 70px
+    margin-bottom: 20px
+    float: right
+    font-size: 40px
+    line-height: 55px
+    background-color: $green
+    border-color: $green
+    &:hover
+        background-color: $yellow
+        transition: .5s ease
+        border: 1px $yellow solid
+.hero_tittle__block
+    text-align: center
+    z-index: 100
+    width: 80%
+.wrap_tittle
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 100px
+.wrap_main.wrap_options
+    display: flex
+    flex-direction: 
+    justify-content: space-between
+    align-items: flex-start
+.option_block
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    width: 33%
+    margin: 0 15px
+.option_pic
+    width: 140px
+    height: 140px
+    background-color: $yellow
+    border-radius: 140px
+    &:hover
+       background-color: $green
+       transition: ease-out 0.5s 
+.option_descript.third
+    width: 65%
+.option_pic__img
+    width: 90px
+    height: 80px
+.option_pic
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+   

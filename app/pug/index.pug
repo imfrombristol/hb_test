@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title ЖК Андреевка
+        link(rel="stylesheet" href="css/normalize.css")
+        link(rel="stylesheet" href="css/bootstrap.min.css")
+        link(rel="stylesheet", href="font/font-awesome-4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="font/stylesheet.css")
+        link(rel="stylesheet", href="css/main.css")
+        
+    body
+        include include/modal.pug  
+        .wrapper
+        include include/hero.pug
+        include include/flat.pug
+            include include/call.pug
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+        script(src="js/bootstrap.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+        script(src="js/main.js")
